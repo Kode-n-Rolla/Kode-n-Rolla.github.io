@@ -1,7 +1,7 @@
 /* EDIT THIS FILE to update your portfolio. Leave an empty string to hide a contact link. */
 window.PORTFOLIO = {
   identity: {
-    name: "YOUR NAME SURNAME", // Replace before publishing
+    name: "Pavel Egin",
     alias: "Kode-n-Rolla",
     headline: "Software development, with security built into the workflow.",
     intro: "I build practical software, review applications for security weaknesses, and help teams move from an idea or issue to a clear technical solution.",
@@ -9,9 +9,9 @@ window.PORTFOLIO = {
     location: "Remote · Worldwide"
   },
   contact: {
-    email: "", // e.g. "hello@example.com" — leave blank until approved
-    linkedin: "", // e.g. "https://www.linkedin.com/in/your-profile/"
-    telegram: "", // e.g. "https://t.me/your_username"
+    email: "pavel.egin@kodenrolla.com",
+    linkedin: "https://www.linkedin.com/in/pavel-egin/",
+    telegram: "https://t.me/kode_n_rolla",
     github: "https://github.com/Kode-n-Rolla"
   },
   services: [
