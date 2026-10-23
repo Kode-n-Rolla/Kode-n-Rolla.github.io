@@ -1,35 +1,92 @@
-# Kode-n-Rolla portfolio — unpublished preview
+# Kode-n-Rolla — Personal Portfolio
 
-Static, dependency-free GitHub Pages website. **Not published.**
+Personal portfolio of **Pavel Egin (aka Kode-n-Rolla)**, an independent software developer and application security practitioner.
 
-## Edit content without touching HTML or CSS
+**Build it right. Think like an attacker.**
 
-Open `site-data.js`. Everything you normally change is there:
+I approach software development with security integrated into the engineering workflow — from understanding trust boundaries and designing APIs to testing how systems behave under unexpected conditions.
 
-- `identity.name`: your real name (placeholder currently, do not publish without editing)
-- `identity.headline`, `identity.intro`, `about`: homepage and about text
-- `contact.email`, `.linkedin`, `.telegram`: leave `""` to hide an unfinished contact method
-- `services`: edit/remove/add service cards
-- `projects`: edit/remove/add project objects; `featured: true` makes a project appear on the page, `featured: false` hides it without deleting; array order controls display order
+**Live website:** https://kode-n-rolla.github.io/
 
-**Adding a project**: copy an existing object inside `projects`, give it a unique `id`, update `name`, `type`, `description`, `tech`, `github`, `status`, set `featured: true`. Don't forget comma separators. The responsive grid handles any card count automatically.
+## Focus Areas
 
-**Removing a project**: use `featured: false` (recommended) or delete its entire object. No HTML editing needed.
+- **Backend & API Development** — backend services, API integrations, automation and developer tools.
+- **Application Security Testing** — web and API security reviews, cloud security assessment, authentication and authorization testing, vulnerability research and remediation guidance.
+- **Security-Aware Engineering** — secure design, input validation, threat modeling, testing and code quality.
 
-Current project claims reflect project READMEs. `rolla-node` and `Cerebro` are clearly marked works in progress. No claims of audits or paid clients are made.
+## Selected Projects
 
-## Preview locally
+The portfolio highlights open-source work across software engineering and security research, including:
 
-Open `index.html` in a browser, or run `python -m http.server 8000` in this folder and visit http://localhost:8000.
+- **[rolla-node](https://github.com/Kode-n-Rolla/rolla-node)** — an early-stage security-oriented P2P messaging project built with Rust.
+- **[Solana Token Risk Lens](https://github.com/Kode-n-Rolla/solana-token-risk-lens)** — a Rust/Axum and React dashboard for reviewing observable token risk signals.
+- **[SCARLET](https://github.com/Kode-n-Rolla/scarlet)** — a CLI tool for Solidity protocol reconnaissance and attack-surface mapping.
+- **[SARA](https://github.com/Kode-n-Rolla/sara)** — an asynchronous web crawler with enumeration capabilities.
+- **[shuka](https://github.com/Kode-n-Rolla/shuka)** — an extensible security research toolkit.
+- **[DeStor](https://github.com/Kode-n-Rolla/destor)** — a Solana-based prototype for asset ownership and history records.
 
-## Publish later (only after approval)
+Project availability and descriptions can be updated independently of the page layout.
 
-Create a **public** repository named `Kode-n-Rolla.github.io`, put files at repository root, then in GitHub Settings → Pages select `Deploy from a branch`, `main`, `/ (root)` if necessary. Visit https://kode-n-rolla.github.io/. It may take a little time for Pages to deploy.
+## Technology
 
-## Before publishing
+The website is a lightweight static application built with:
 
-- Fill in real name and approved contact links in `site-data.js`.
-- Review every project description and service claim.
-- Confirm whether to advertise Web3-related work prominently.
-- Decide if external Google Fonts requests are acceptable; remove `@import` in `styles.css` for system-font only.
-- Optional: add favicon, image/social preview and a custom domain later.
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- GitHub Pages
+
+No frontend framework, build pipeline or paid hosting is required.
+
+## Portfolio Maintenance
+
+Website content is managed in **`site-data.js`**, separately from the HTML structure and CSS styles.
+
+You can edit:
+
+| Field | Purpose |
+|---|---|
+| `identity` | Name, headline, introduction and availability |
+| `contact` | Email, LinkedIn, Telegram and GitHub |
+| `services` | Services and technical skills |
+| `projects` | Project cards and visibility |
+| `about` | Background and engineering approach |
+
+To add a project, copy an existing entry in the `projects` array, assign a unique `id`, and update its content.
+
+Set `featured: true` to display a project or `featured: false` to hide it. The layout automatically adapts to the number of visible projects.
+
+## Local Development
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Kode-n-Rolla/Kode-n-Rolla.github.io.git
+cd Kode-n-Rolla.github.io
+```
+
+Start a local server:
+
+```bash
+python -m http.server 8000
+```
+
+Open http://localhost:8000 in your browser.
+
+## Deployment
+
+The website is hosted on GitHub Pages and deployed from the `main` branch.
+
+Changes committed to the published branch are deployed automatically through GitHub Pages.
+
+## Contact
+
+- **Website:** https://kode-n-rolla.github.io/
+- **Email:** pavel.egin@kodenrolla.com
+- **LinkedIn:** https://www.linkedin.com/in/pavel-egin/
+- **Telegram:** https://t.me/kode_n_rolla
+- **GitHub:** https://github.com/Kode-n-Rolla
+
+---
+
+Built by Pavel Egin · Kode-n-Rolla
