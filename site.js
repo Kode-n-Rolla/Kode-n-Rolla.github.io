@@ -22,4 +22,45 @@ function render(){
   destinations.forEach(([label,url,symbol])=>{const safe=safeUrl(url);if(!safe)return;const a=link(label+' '+symbol,safe,'contact-link');$('contact-links').append(a);});
   if (!contact.email || !contact.linkedin || !contact.telegram) $('contact-footnote').textContent='Preview note: add your approved contact links to site-data.js before publishing.';
 }
+function renderHuman() {
+  const human = data.human;
+  const section = $('human');
+
+  if (!human || !human.enabled || !section) return;
+
+  $('human-heading').textContent = human.heading;
+  $('human-intro').textContent = human.intro;
+
+  const details = $('human-details');
+  details.replaceChildren();
+
+  function addRow(label, value) {
+    const row = el('div', 'human-row');
+    row.append(
+      el('span', 'human-key', label),
+      el('span', 'human-value', value)
+    );
+    details.append(row);
+  }
+
+  (human.favorites || []).forEach(item => {
+    addRow(
+      item.label.toLowerCase().replace(/[^a-z0-9]+/g, '_'),
+      item.name
+    );
+  });
+
+  if (human.music?.length) {
+    addRow('music_rotation', human.music.join(' · '));
+  }
+
+  addRow('human_verified', 'true');
+
+  $('human-comment').textContent =
+    human.comment ? `// ${human.comment}` : '';
+
+  section.hidden = false;
+}
+
+renderHuman();
 render();
