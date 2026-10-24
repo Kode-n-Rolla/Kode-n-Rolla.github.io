@@ -33,5 +33,31 @@ window.PORTFOLIO = {
     heading: "A builder who thinks like a tester.",
     text: "My background in penetration testing shapes how I approach software: understand its boundaries, make assumptions explicit, and test what happens when systems are used in unexpected ways. I enjoy building the tools as much as breaking down the problems.",
     capabilities: ["Application security", "Backend APIs", "Rust & systems", "Security tooling", "Smart-contract research/development"]
+  },
+  human: {
+    enabled: true,
+    heading: "Proof of Humanity.",
+    intro: "There's more to life than writing code. Here's a little about the human behind the terminal.",
+  
+    favorites: [
+      {
+        label: "Favorite multiplayer",
+        name: "Team Fortress 2"
+      },
+      {
+        label: "Currently playing",
+        name: "MOUSE: P.I. For Hire"
+      }
+    ],
+  
+    music: [
+      "Red Hot Chili Peppers",
+      "Gorillaz",
+      "Motörhead",
+      "Muddy Waters",
+      "Inner Circle"
+    ],
+  
+    comment: "Powered by coffee, questionable playlists and good engineering."
   }
 };
