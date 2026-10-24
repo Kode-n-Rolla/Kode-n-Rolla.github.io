@@ -1,4 +1,3 @@
-/* EDIT THIS FILE to update your portfolio. Leave an empty string to hide a contact link. */
 window.PORTFOLIO = {
   identity: {
     name: "Pavel Egin",
