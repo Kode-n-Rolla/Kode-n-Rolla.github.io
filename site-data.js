@@ -51,12 +51,11 @@ window.PORTFOLIO = {
   
     music: [
       "Red Hot Chili Peppers",
-      "Gorillaz",
       "Motörhead",
-      "Muddy Waters",
+      "Eminem",
       "Inner Circle"
     ],
   
-    comment: "Powered by coffee, questionable playlists and good engineering."
+    comment: "Powered by coffee, vibe playlists and good engineering."
   }
 };
