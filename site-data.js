@@ -84,7 +84,7 @@ window.PORTFOLIO = {
   ],
   about: {
     heading: "Methodology over checklists.",
-    text: "I approach penetration testing as a structured investigation: map the attack surface, form hypotheses, validate security weaknesses and communicate the real impact. My background includes web and API testing, AWS assessments, secure code review, proof-of-concept development, reporting and retesting. I also build security tools and continue developing my Linux, Windows and AI security testing skills through hands-on labs.",
+    text: "I approach penetration testing as a structured investigation: map the attack surface, form hypotheses, validate security weaknesses and communicate the real impact. My background includes web and API testing, AWS assessments, secure code review, proof-of-concept development, reporting and retesting.",
     capabilities: ["Web / API pentesting", "AWS security", "Reconnaissance", "PoCs & reporting", "Secure code review", "Rust / C# tooling", "AI security"]
   },
   human: {
