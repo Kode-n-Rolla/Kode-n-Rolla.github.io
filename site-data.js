@@ -20,9 +20,9 @@ window.PORTFOLIO = {
       skills: ["Web Apps", "REST APIs", "AuthN / AuthZ", "Burp Suite", "PoCs", "Reporting"]
     },
     {
-      icon: "$_", category: "02 / ASSESS", name: "Cloud & Infrastructure Security",
-      description: "Security assessments of AWS configurations, permissions and exposed services, supported by hands-on reconnaissance and Linux/Windows lab practice.",
-      skills: ["AWS", "IAM", "S3", "Network Recon", "Linux", "Windows Labs"]
+      icon: "$_", category: "02 / ASSESS", name: "Cloud, Infrastructure & AI Security",
+      description: "Security assessments of AWS configurations, permissions and exposed services, supported by hands-on reconnaissance and Linux/Windows penetration tests.",
+      skills: ["AWS", "IAM", "S3", "Network Recon", "Linux", "Windows", "AI"]
     },
     {
       icon: "</>", category: "03 / RESEARCH", name: "Security Research & Tooling",
@@ -52,7 +52,7 @@ window.PORTFOLIO = {
       tech: ["Python", "Solidity", "Static Analysis"], github: "https://github.com/Kode-n-Rolla/scarlet", status: "v0.1.0"
     },
     {
-      id: "hacking-time", featured: false, number: "05", name: "hacking_time", type: "Offensive security / Knowledge base",
+      id: "hacking-time", featured: true, number: "05", name: "hacking_time", type: "Offensive security / Knowledge base",
       description: "A practical offensive security cheat-sheet library for tools, commands and testing workflows.",
       tech: ["PowerShell", "Pentesting", "Reference"], github: "https://github.com/Kode-n-Rolla/hacking_time", status: "Public repository"
     },
