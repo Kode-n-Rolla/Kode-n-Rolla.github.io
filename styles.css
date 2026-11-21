@@ -87,3 +87,24 @@
     gap: 2px;
   }
 }
+
+/* Hero layout fix */
+.hero {
+  min-height: 0;
+}
+
+.hero-bottom {
+  position: static;
+  margin-top: 56px;
+}
+
+@media (max-width: 690px) {
+  .hero {
+    padding-bottom: 60px;
+  }
+
+  .hero-bottom {
+    margin-top: 40px;
+  }
+}
+
